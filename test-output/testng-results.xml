@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-21T13:01:01 IST" name="CalculatorTestSuite" finished-at="2024-11-21T13:01:01 IST" duration-ms="41">
+    <groups>
+    </groups>
+    <test started-at="2024-11-21T13:01:01 IST" name="CalculatorTests" finished-at="2024-11-21T13:01:01 IST" duration-ms="41">
+      <class name="com.calculator.CalculatorTest">
+        <test-method signature="testAddition()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testAddition" finished-at="2024-11-21T13:01:01 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testDivision()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testDivision" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testDivisionByZero()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testDivisionByZero" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[Division by zero is not allowed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: Division by zero is not allowed
+at com.calculator.Calculator.divide(Calculator.java:20)
+at com.calculator.CalculatorTest.testDivisionByZero(CalculatorTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionByZero -->
+        <test-method signature="testMultiplication()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testMultiplication" finished-at="2024-11-21T13:01:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method signature="testSubtraction()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testSubtraction" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+      </class> <!-- com.calculator.CalculatorTest -->
+    </test> <!-- CalculatorTests -->
+  </suite> <!-- CalculatorTestSuite -->
+</testng-results>
