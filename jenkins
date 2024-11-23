@@ -39,7 +39,7 @@ pipeline {
                 # Deployment script
                 DEPLOY_DIR="./"
                 mkdir -p $DEPLOY_DIR
-                cp target/calculator-0.0.1-SNAPSHOT.jar $DEPLOY_DIR
+                cp target/Calculator-0.0.1-SNAPSHOT.jar $DEPLOY_DIR
                 '''
             }
         }
