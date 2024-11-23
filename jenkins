@@ -37,9 +37,9 @@ pipeline {
                 sh '''
                 #!/bin/bash
                 # Deployment script
-                DEPLOY_DIR="/path/to/staging"
+                DEPLOY_DIR="./"
                 mkdir -p $DEPLOY_DIR
-                cp target/calculator-0.0.1-SNAPSHOT.jar $DEPLOY_DIR/
+                cp target/calculator-0.0.1-SNAPSHOT.jar $DEPLOY_DIR
                 '''
             }
         }
