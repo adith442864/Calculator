@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-21T13:01:01 IST" name="CalculatorTestSuite" finished-at="2024-11-21T13:01:01 IST" duration-ms="41">
+  <suite started-at="2024-11-23T13:16:13 IST" name="Default suite" finished-at="2024-11-23T13:16:13 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2024-11-21T13:01:01 IST" name="CalculatorTests" finished-at="2024-11-21T13:01:01 IST" duration-ms="41">
+    <test started-at="2024-11-23T13:16:13 IST" name="Default test" finished-at="2024-11-23T13:16:13 IST" duration-ms="69">
       <class name="com.calculator.CalculatorTest">
-        <test-method signature="testAddition()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testAddition" finished-at="2024-11-21T13:01:01 IST" duration-ms="8" status="PASS">
+        <test-method signature="testAddition()[pri:0, instance:com.calculator.CalculatorTest@2a798d51]" started-at="2024-11-23T13:16:13 IST" name="testAddition" finished-at="2024-11-23T13:16:13 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddition -->
-        <test-method signature="testDivision()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testDivision" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+        <test-method signature="testDivision()[pri:0, instance:com.calculator.CalculatorTest@2a798d51]" started-at="2024-11-23T13:16:13 IST" name="testDivision" finished-at="2024-11-23T13:16:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDivision -->
-        <test-method signature="testDivisionByZero()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testDivisionByZero" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+        <test-method signature="testDivisionByZero()[pri:0, instance:com.calculator.CalculatorTest@2a798d51]" started-at="2024-11-23T13:16:13 IST" name="testDivisionByZero" finished-at="2024-11-23T13:16:13 IST" duration-ms="1" status="PASS">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[Division by zero is not allowed]]>
@@ -24,10 +24,8 @@
               <![CDATA[java.lang.ArithmeticException: Division by zero is not allowed
 at com.calculator.Calculator.divide(Calculator.java:20)
 at com.calculator.CalculatorTest.testDivisionByZero(CalculatorTest.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -36,7 +34,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -58,15 +56,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDivisionByZero -->
-        <test-method signature="testMultiplication()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testMultiplication" finished-at="2024-11-21T13:01:01 IST" duration-ms="0" status="PASS">
+        <test-method signature="testMultiplication()[pri:0, instance:com.calculator.CalculatorTest@2a798d51]" started-at="2024-11-23T13:16:13 IST" name="testMultiplication" finished-at="2024-11-23T13:16:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultiplication -->
-        <test-method signature="testSubtraction()[pri:0, instance:com.calculator.CalculatorTest@485966cc]" started-at="2024-11-21T13:01:01 IST" name="testSubtraction" finished-at="2024-11-21T13:01:01 IST" duration-ms="1" status="PASS">
+        <test-method signature="testSubtraction()[pri:0, instance:com.calculator.CalculatorTest@2a798d51]" started-at="2024-11-23T13:16:13 IST" name="testSubtraction" finished-at="2024-11-23T13:16:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubtraction -->
       </class> <!-- com.calculator.CalculatorTest -->
-    </test> <!-- CalculatorTests -->
-  </suite> <!-- CalculatorTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
