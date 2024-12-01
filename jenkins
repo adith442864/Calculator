@@ -1,57 +1,42 @@
-pipeline {
-    agent any
-
-    stages {
+node {
+    try {
         stage('Checkout Code') {
-            steps {
-                echo 'Checking out code from repository...'
-                // Replace with your repository URL
-                git 'https://github.com/adith442864/Calculator.git'
-            }
+            echo 'Checking out code from repository...'
+            // Replace with your repository URL
+            checkout([$class: 'GitSCM', 
+                branches: [[name: '*/master']], 
+                userRemoteConfigs: [[url: 'https://github.com/adith442864/Calculator.git']]
+            ])
         }
-
+ 
         stage('Build') {
-            steps {
-                echo 'Building the project...'
-                sh 'mvn clean compile'
-            }
+            echo 'Building the project...'
+            sh 'mvn clean compile'
         }
-
+ 
         stage('Run Tests') {
-            steps {
-                echo 'Running TestNG tests...'
-                sh 'mvn test'
-            }
+            echo 'Running TestNG tests...'
+            sh 'mvn test'
         }
-
+ 
         stage('Package') {
-            steps {
-                echo 'Packaging the application...'
-                sh 'mvn package'
-            }
+            echo 'Packaging the application...'
+            sh 'mvn package'
         }
-
+ 
         stage('Deploy') {
-             steps {
-                echo 'Deploying the application...'
-                sh '''
-                #!/bin/bash
-                # Deployment script
-                DEPLOY_DIR="./"
-                mkdir -p $DEPLOY_DIR
-                cp target/Calculator-0.0.1-SNAPSHOT.jar $DEPLOY_DIR
-                '''
-            }
+            echo 'Deploying the application...'
+            sh '''
+                DEPLOY_DIR=/home/parallels/Downloads
+                mkdir -p "$DEPLOY_DIR"
+                cp target/Calculator-0.0.1-SNAPSHOT.jar "$DEPLOY_DIR/"
+            '''
         }
-    }
-
-    post {
-        success {
-            echo 'Pipeline executed successfully!'
-        }
-        failure {
-            echo 'Pipeline failed. Please check the logs.'
-        }
+ 
+        echo 'Pipeline executed successfully!'
+        currentBuild.result = 'SUCCESS'
+    } catch (Exception e) {
+        echo "Pipeline failed: ${e.message}"
+        currentBuild.result = 'FAILURE'
     }
 }
-
