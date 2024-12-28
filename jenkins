@@ -27,7 +27,7 @@ node {
         stage('Deploy') {
             echo 'Deploying the application...'
             sh '''
-                DEPLOY_DIR=/home/parallels/Downloads
+                DEPLOY_DIR=/home/parallels/Downloads/deployjar
                 mkdir -p "$DEPLOY_DIR"
                 cp target/Calculator-0.0.1-SNAPSHOT.jar "$DEPLOY_DIR/"
             '''
